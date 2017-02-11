@@ -1,1 +1,1 @@
-<?php include_once("public/home.html" "public/survey.html"); ?>
+<?php include_once("app/public/home.html" "app/public/survey.html"); ?>
