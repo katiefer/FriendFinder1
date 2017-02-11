@@ -1,0 +1,1 @@
+<?php include_once("public/home.html" "public/survey.html"); ?>
