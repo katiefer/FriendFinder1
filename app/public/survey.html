@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder Survey</title>
+
+<!-- //Link all related files and CDNs -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<!-- //Body starts -->
+<body>
+  <div class="container">
+
+<!-- //Survey header -->
+    <div class="jumbotron">
+      <hr>
+      <h2 class="text-left">Survey Questions</h2>
+      <br>
+
+<!--  //About You header -->       
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">About You</h4>
+          </div>
+
+<!-- //Start Form -->
+          <div class="panel-body">
+            <form role="form">
+
+<!-- //Name Field -->
+                <div class="form-group">
+                <label for="reserve-name">Name (Required)</label>
+                <input type="text" class="form-control" id="reserve-name">
+              </div>
+
+<!-- //Link to Photo Field -->
+              <div class="form-group">
+                <label for="reserve-phone">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="reserve-phone">
+              </div>
+
+
+<!-- //Title Question 1   -->
+              <h3>
+                <strong>Question 1</strong>
+
+<!-- //Question 1 -->
+              <h4>You are constantly planning your next adventure.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q1" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q1_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 2   -->
+              <h3>
+                <strong>Question 2</strong>
+
+<!-- //Question 2 -->
+              <h4>You enjoy hanging with 1 or 2 people as opposed to a crowd.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q2" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q2_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 3   -->
+              <h3>
+                <strong>Question 3</strong>
+
+<!-- //Question 3 -->
+              <h4>Small talks is for the birds, give me the good stuff!</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q3" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q3_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 4   -->
+              <h3>
+                <strong>Question 4</strong>
+
+<!-- //Question 4 -->
+              <h4>Life is too short to play within the lines.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q4" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q4_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+<!-- //Title Question 5   -->
+              <h3>
+                <strong>Question 5</strong>
+
+<!-- //Question 5 -->
+              <h4>Family and friends come before it all.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q5" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q5_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 6   -->
+              <h3>
+                <strong>Question 6</strong>
+
+<!-- //Question 6 -->
+              <h4>Disposable income is meant for new experiences, not new material items.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q6" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q6_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 7   -->
+              <h3>
+                <strong>Question 7</strong>
+
+<!-- //Question 7 -->
+              <h4>Pho is awesome.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q7" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q7_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 8   -->
+              <h3>
+                <strong>Question 8</strong>
+
+<!-- //Question 8 -->
+              <h4>Sleep and taking care of yourself are at the top of the list.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q8" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q8_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+
+<!-- //Title Question 9   -->
+              <h3>
+                <strong>Question 9</strong>
+
+<!-- //Question 9 -->
+              <h4>Brunch is the best meal of the day.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q9" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q9_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+<!-- //Title Question 10   -->
+              <h3>
+                <strong>Question 10</strong>
+
+<!-- //Question 10 -->
+              <h4>You are constantly planning your next adventure.</h4>
+
+<!-- //Choices, declaring values for each selection -->
+              <select data-placeholder class="chosen-select" id="q10" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+                </select>
+              <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q10_chosen">
+
+<!-- //Select Dropdown Button -->
+                <a class="chosen-single chosen-default">
+                  <span>Select an Option</span>
+                  <div>
+                  <b></b>
+                  </div>
+                  </a>
+              <div class="chosen-drop">
+                <div class="chosen-search">
+                  <input type="text" autocomplete="off">
+                  </div>
+
+<!-- //Create list with results -->
+                <ul class="chosen-results">
+                  <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                  <li class="active-result" data-option-array-index="2">2</li>
+                  <li class="active-result" data-option-array-index="3">3</li>
+                  <li class="active-result" data-option-array-index="4">4</li>
+                  <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <br>
+<!-- //Submit button -->
+              <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+              <hr>
+
+<!-- //Footer with API and Github Links -->
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/katiefer/FriendFinder1">GitHub Repo</a></p>
+      </div>
+    </footer>
+  </div>
+
+<!-- //Modal to show results -->
+<div id ="resultsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">x</button>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+            </h2>
+            </div>
+          <div class="modal-body">
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- //Javascript -->
+
+<script>
+  
+
+
+</script>
+</body>
+</html>
+
